@@ -1,0 +1,118 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity"
+    android:id="@+id/layout">
+
+    <NumberPicker
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pickGreen"
+        android:layout_marginTop="44dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <NumberPicker
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pickBlue"
+        android:layout_alignTop="@+id/pickGreen"
+        android:layout_toRightOf="@+id/pickGreen"
+        android:layout_toEndOf="@+id/pickGreen" />
+
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/labelGreen"
+        android:layout_toRightOf="@+id/pickRed"
+        android:text="Green"
+        android:layout_alignBottom="@+id/labelRed"
+        android:layout_toLeftOf="@+id/labelBlue"
+        android:layout_toStartOf="@+id/labelBlue"
+        android:editable="false"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/labelBlue"
+        android:layout_alignTop="@+id/labelGreen"
+        android:layout_toRightOf="@+id/pickGreen"
+        android:text="Blue"
+        android:layout_alignBottom="@+id/labelGreen"
+        android:layout_alignRight="@+id/pickBlue"
+        android:layout_alignEnd="@+id/pickBlue"
+        android:editable="false"
+        />
+
+    <EditText
+        android:layout_width="165dp"
+        android:layout_height="113dp"
+        android:id="@+id/displayColor"
+        android:editable="false"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/labelBlue" />
+
+    <NumberPicker
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pickRed"
+        android:layout_alignTop="@+id/pickGreen"
+        android:layout_toLeftOf="@+id/pickGreen"
+        android:layout_toStartOf="@+id/pickGreen" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/labelRed"
+        android:layout_above="@+id/pickRed"
+        android:layout_alignLeft="@+id/pickRed"
+        android:layout_alignStart="@+id/pickRed"
+        android:text="   Red"
+        android:layout_alignRight="@+id/pickRed"
+        android:layout_alignEnd="@+id/pickRed"
+        android:editable="false"
+        />
+
+
+    <Button
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:background="@drawable/save"
+        android:id="@+id/saveButton"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/select"
+        android:layout_alignStart="@+id/select" />
+
+    <Button
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:background="@drawable/random"
+        android:id="@+id/randomColor"
+        android:textColor="#ffffff"
+        android:layout_alignTop="@+id/labelRed"
+        android:layout_alignLeft="@+id/select"
+        android:layout_alignStart="@+id/select" />
+
+    <Button
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:id="@+id/select"
+        android:background="@drawable/button_ok"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/pickRed"
+        android:layout_toStartOf="@+id/pickRed"
+        android:layout_marginRight="46dp"
+        android:layout_marginEnd="46dp" />
+
+
+</RelativeLayout>

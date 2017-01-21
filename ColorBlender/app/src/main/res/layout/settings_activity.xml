@@ -1,0 +1,46 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="khewitt.colorblender.SettingsActivity"
+    android:id="@+id/settings_layout">
+
+    <FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/fragment"
+        android:name="khewitt.colorblender.SettingsFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        tools:layout="@layout/settings_activity">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:text=""
+            android:textSize="20sp"
+            android:id="@+id/app_color_button"
+            android:background="@drawable/set_color"
+            android:clickable="true"
+            android:layout_gravity="center_horizontal|top"/>
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:id="@+id/textsize_button"
+            android:clickable="true"
+            android:background="@drawable/font_size"
+            android:layout_gravity="center" />
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:id="@+id/textcolor_button"
+            android:background="@drawable/text_color"
+            android:clickable="true"
+            android:layout_gravity="center_horizontal|bottom" />
+    </FrameLayout>
+
+
+</RelativeLayout>
